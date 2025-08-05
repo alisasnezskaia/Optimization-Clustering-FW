@@ -16,8 +16,13 @@ def load_dimacs_graph(filepath):
             i, j = int(parts[1]) - 1, int(parts[2]) - 1  # 0-based indexing
             edges.append((i, j))
     
-    A = np.zeros((nodes, nodes))
+    W = np.zeros((nodes, nodes))
     for i, j in edges:
-        A[i, j] = 1
-        A[j, i] = 1  # since the graph is undirected
+        W[i, j] = 1
+        W[j, i] = 1  # since the graph is undirected
+    return W
+
+def create_optimization_matrix(W, alpha):
+    """Convert adjacency matrix W to optimization matrix A = -W + alpha*I"""
+    A = -W + alpha * np.eye(W.shape[0])
     return A

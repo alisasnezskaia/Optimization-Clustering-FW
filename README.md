@@ -7,6 +7,8 @@
 This project implements and analyzes Frank-Wolfe algorithm variants for clustering optimization problems. We focus on developing efficient implementations and testing them on regularized max-clique problems.
 
 ## 🎯 Objectives
+<img width="1054" height="355" alt="image" src="https://github.com/user-attachments/assets/92fe9510-1f46-4f02-9c0d-06728fb15ae3" />
+
 
 ### Theoretical Analysis
 - In-depth study of Frank-Wolfe algorithm theory

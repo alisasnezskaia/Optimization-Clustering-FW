@@ -28,11 +28,7 @@ Test algorithms on two problem formulations:
 - **L2 regularized max-clique problem** (Section 3, equation 31 in `clustering.pdf`)
 - **L0 regularized max-clique problem** (Section 3, equation 33 in `clustering.pdf`)
 
-**Datasets:** 4 DIMACS Instances:
-- `brock200_4.clq.b` - Hidden clique structure (brock family, ~200 nodes)
-- `C250.9.clq.b` - High density random graph (C family, 250 nodes, 90% edges)
-- `DSJC500_5.clq.b` - Large sparse graph (DSJC family, 500 nodes, 5% edges)
-- `keller4.clq.b` - Geometric structure (keller family, 171 nodes)
+**Datasets:** 4 DIMACS Instances
 
 **Analysis:** Results visualization through plots and tables
 

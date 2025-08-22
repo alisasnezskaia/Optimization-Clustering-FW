@@ -1,4 +1,6 @@
 import numpy as np
+import scipy
+from scipy.io import mmread
 
 def load_dimacs_graph(filepath):
     with open(filepath, 'r') as f:
@@ -26,3 +28,14 @@ def create_optimization_matrix(W, alpha):
     """Convert adjacency matrix W to optimization matrix A = -W + alpha*I"""
     A = -W + alpha * np.eye(W.shape[0])
     return A
+
+def get_adj_matrix(path):
+    M = mmread(path).tocsr()
+    # check if the loaded matrix is symmetric
+    is_symmetric = (M != M.T).nnz == 0
+    if not is_symmetric:
+        M = M.maximum(M.T)
+
+    M.setdiag(0)
+    M.eliminate_zeros()
+    return M

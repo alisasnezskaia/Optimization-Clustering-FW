@@ -2,7 +2,6 @@ import numpy as np
 import scipy
 from scipy.io import mmread
 
-# Parses a DIMACS .clq file and converts it into an adjacency matrix
 def load_dimacs_graph(filepath):
     with open(filepath, 'r') as f:
         lines = f.readlines()
@@ -25,7 +24,6 @@ def load_dimacs_graph(filepath):
         W[j, i] = 1  # since the graph is undirected
     return W
 
-# Loads a MATLAB .mlx file and extracts the stored matrix
 def get_adj_matrix(path):
     M = mmread(path).tocsr()
     # check if the loaded matrix is symmetric

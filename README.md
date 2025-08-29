@@ -1,12 +1,16 @@
-# Frank-Wolfe Algorithm Optimization Project
+# Max-Clique Problem via Frank-Wolfe Variants
 
 **Group 37** - Optimization Methods for Clustering
 
-## 📋 Project Overview
+## Project Overview
 
-This project implements and analyzes Frank-Wolfe algorithm variants for clustering optimization problems. We focus on developing efficient implementations and testing them on regularized max-clique problems.
+This project explores continuous optimization approaches for approximating the maximum clique in a graph. It implements several Frank-Wolfe (FW) variants, including Standard Frank-Wolfe, Away-Step Frank-Wolfe and Pairwise Frank-Wolfe.
 
-## 🎯 Objectives
+These methods are applied on L2 and L0 relaxations of the combinatorial max-clique problem, with flexible step size strategies (exact line search, Armijo, diminishing, logarithmic).
+
+Additionally, a Projected Gradient (PG) method on the simplex is implemented for comparison, highlighting differences in convergence speed, objective values, extracted clique size, and computational complexity.
+
+## Objectives
 <img width="1054" height="355" alt="image" src="https://github.com/user-attachments/assets/92fe9510-1f46-4f02-9c0d-06728fb15ae3" />
 
 
@@ -34,35 +38,3 @@ Test algorithms on two problem formulations:
 
 **Analysis:** Results visualization through plots and tables
 
-## 📚 Resources
-
-### Reference Papers
-- `FW.pdf` - Frank-Wolfe algorithm fundamentals
-- `FW_variants.pdf` - Algorithm variations
-- `FW_survey.pdf` - Comprehensive survey
-- `clustering.pdf` - Problem formulations and datasets
-
-### Supplementary Materials
-Additional papers are provided for context but don't require in-depth study.
-
-## 👥 Collaboration Guidelines
-
-### Academic Integrity
-1. **Equal Contribution:** All team members must contribute adequately
-2. **No Academic Misconduct:** Submitting work without adequate contribution is prohibited
-3. **Anti-Plagiarism Policy:**
-   - Cite all sources properly
-   - No copying of data, code, images, or materials without acknowledgment
-   - No use of other students' work or uncredited web materials
-4. **Reporting:** Report any misconduct within the group
-
-### Group Information
-- **Group Number:** 37
-- **Team Size:** 3 students
-- **Communication:** Always reference Group 37 in communications
-
-## 📞 Contact
-
-For questions about the project description, please reach out.
-
-*Instructor: Francesco Rinaldi*

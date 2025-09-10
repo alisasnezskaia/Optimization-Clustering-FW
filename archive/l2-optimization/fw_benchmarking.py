@@ -1,7 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
-from l2_fw_variants import frank_wolfe, away_step_fw, pairwise_fw, l2_objective
+from archive.l2_fw_variants import frank_wolfe, away_step_fw, pairwise_fw, l2_objective
 
 
 def sparsity(x):

@@ -1,7 +1,7 @@
 from parse_graphs import load_dimacs_graph, create_optimization_matrix
-from fw_benchmarking import benchmark_algorithms
-from l0_objective import l0_objective
-from visualization import plot_convergence, compare_algorithms
+from archive.fw_benchmarking import benchmark_algorithms
+from archive.l0_objective import l0_objective
+from archive.visualization import plot_convergence, compare_algorithms
 import numpy as np
 
 # Load adjacency matrix
